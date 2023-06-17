@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.colorSelector, .clear {
+    width: 100%;
+    height: 5vh;
+    margin-bottom: 1vh;
+}
+
+.grid-container {
+    display: grid;
+    flex: 7;
+    height: 100%;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(16, 1fr);
+    border: 1px solid #999;
+}
+
+.grid-item {
+    border: 1px solid gray;
+}
+
+.grid-item:hover {
+    background-color: rgb(88, 88, 88);
+}
